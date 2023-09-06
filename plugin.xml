@@ -30,8 +30,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <preference name="IOS_FIREBASE_ANALYTICS_VERSION" default="~> 8.6.0"/>
 
         <hook type="after_prepare" src="hooks/ios/iOSCopyPreferences.js" />
-        <hook type="after_prepare" src="hooks/ios/iosTest.js" />
-
+        <hook type="before_plugin_install" src="hooks/ios/iosTest.js" />
+           <resource-file src="GoogleService-Info.plist" target="./GoogleService-Info.plist" />
         <config-file target="config.xml" parent="/*">
             <feature name="FirebaseAnalytics">
                 <param name="ios-package" value="FirebaseAnalyticsPlugin" />
