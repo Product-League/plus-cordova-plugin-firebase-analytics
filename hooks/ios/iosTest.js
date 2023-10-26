@@ -25,6 +25,6 @@ module.exports = function(context) {
     return appId;
 }
 
-  fs.copyFileSync(context.opts.projectRoot + '/platforms/ios/www/' + getAppIdentifier(context.opts.projectRoot + 'config.xml') + '.firebase' + '/GoogleService-Info.plist' , path.join(context.opts.plugin.dir, 'GoogleService-Info.plist'));
-  console.log("Source path: " + context.opts.projectRoot + '/platforms/ios/www/' + getAppIdentifier(context.opts.projectRoot + 'config.xml') + '.firebase' + '/GoogleService-Info.plist', "Dest path:" + path.join(context.opts.plugin.dir, 'GoogleService-Info.plist'))
+  fs.copyFileSync(context.opts.projectRoot + '/platforms/ios/www/' + getAppIdentifier(path.join(context.opts.projectRoot,'config.xml')) + '.firebase' + '/GoogleService-Info.plist' , path.join(context.opts.plugin.dir, 'GoogleService-Info.plist'));
+  console.log("Source path: " + context.opts.projectRoot + '/platforms/ios/www/' + getAppIdentifier(path.join(context.opts.projectRoot,'config.xml')) + '.firebase' + '/GoogleService-Info.plist', "Dest path:" + path.join(context.opts.plugin.dir, 'GoogleService-Info.plist'))
 }
