@@ -49,11 +49,9 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <config-file target="*-Info.plist" parent="FirebaseAutomaticScreenReportingEnabled">
             <string>$AUTOMATIC_SCREEN_REPORTING_ENABLED</string>
         </config-file>
-               <!--
         <config-file target="*-Info.plist" parent="NSUserTrackingUsageDescription">
             <string>$USER_TRACKING_DESCRIPTION_IOS</string>
         </config-file>
-               -->
         <config-file target="*-Info.plist" parent="FIREBASE_PERFORMANCE_COLLECTION_ENABLED">
             <string>true</string>
         </config-file>
