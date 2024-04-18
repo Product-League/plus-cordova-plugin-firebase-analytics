@@ -1,7 +1,8 @@
 #import "FirebaseAnalyticsPlugin.h"
 
-@import Firebase;
 @import AppTrackingTransparency;
+@import FirebaseAnalytics;
+@import FirebaseCore;
 
 @implementation FirebaseAnalyticsPlugin
 
